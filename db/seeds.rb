@@ -160,3 +160,26 @@ genres = Hash[[
 ].map { |genre| [genre, Genre.find_or_create_by(name: genre)] }]
 
 
+Artist.create(name: "Taylor Swift")
+Artist.create(name: "Dolly Parton")
+Artist.create(name: "Russell Dickerson")
+Artist.create(name: "Ashley McBryde")
+Artist.create(name: "Twinnie")
+
+Song.create(title: "Shake it off", artist_id: 1, genre_id: 1)
+Song.create(title: "Love Story", artist_id: 1, genre_id: 2)
+Song.create(title: "Jolene", artist_id: 2, genre_id: 3)
+Song.create(title: "Coat of Many Colors", artist_id: 2, genre_id: 4)
+Song.create(title: "Yours", artist_id: 3, genre_id: 5)
+Song.create(title: "The Jacket", artist_id: 4, genre_id: 6)
+Song.create(title: "Superhero", artist_id: 5, genre_id: 7)
+Song.create(title: "Better When I'm Drunk", artist_id: 5, genre_id: 8)
+
+Note.create(content: "blah blah blah blah blah blah blah", song_id: 1)
+Note.create(content: "blah blah blah blah blah blah blah", song_id: 2)
+Note.create(content: "blah blah blah blah blah blah blah", song_id: 3)
+Note.create(content: "blah blah blah blah blah blah blah", song_id: 4)
+Note.create(content: "blah blah blah blah blah blah blah", song_id: 5)
+Note.create(content: "blah blah blah blah blah blah blah", song_id: 6)
+Note.create(content: "blah blah blah blah blah blah blah", song_id: 7)
+Note.create(content: "blah blah blah blah blah blah blah", song_id: 8)
